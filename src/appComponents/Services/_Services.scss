@@ -1,0 +1,26 @@
+.services_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  .services_heading {
+    color: $secondary;
+    margin-bottom: 45px;
+  }
+  .service_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services_wrapper {
+    .service_item {
+      justify-content: unset;
+      overflow: auto;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.input_wrapper {
+  height: 40px;
+  width: 300px;
+  font-size: 16px;
+  padding: 0px 0px 0px 15px;
+  border-radius: 4px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .input_wrapper {
+    width: 200px;
+  }
+}

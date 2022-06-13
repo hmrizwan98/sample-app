@@ -1,0 +1,61 @@
+body {
+  font-family: "Prompt", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.heading-sm {
+  font-size: 22px;
+  color: $secondary;
+}
+.heading-md {
+  font-size: 30px;
+  color: $secondary;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.heading-lg {
+  font-size: 40px;
+  color: $white;
+}
+.font_weight_md {
+  font-weight: 400;
+}
+.font-weight {
+  font-weight: bold;
+}
+h1 {
+  margin: 0px;
+}
+p {
+  margin: 0px;
+}
+h4 {
+  margin: 0;
+}
+.styled_input_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  input {
+    margin-right: 20px;
+  }
+}
+details > summary:first-of-type {
+  list-style-type: none;
+}
+hr {
+  border: 0.5px solid $borderColor;
+}
+.bold {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled_input_wrapper {
+    margin-bottom: 40px;
+  }
+}

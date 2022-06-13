@@ -1,0 +1,20 @@
+.contact_card_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 160px;
+  width: 290px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid $borderColor;
+  margin-right: 10px;
+  p {
+    margin-bottom: 20px;
+    color: $textColor;
+  }
+  h4 {
+    margin-bottom: 8px;
+    // font-weight: 300;
+    // color: black;
+  }
+}

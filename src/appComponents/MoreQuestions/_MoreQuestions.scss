@@ -1,0 +1,17 @@
+.more_question_wrapper {
+  .contact_wrapper {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .more_question_wrapper {
+    .contact_wrapper {
+      flex-direction: column;
+      align-items: center;
+      .contact_card_wrapper {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

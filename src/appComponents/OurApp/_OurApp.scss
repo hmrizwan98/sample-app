@@ -1,0 +1,40 @@
+.app_wrapper {
+  background: url("../../assets/images/png/background.png");
+  height: 700px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 16px;
+    color: $white;
+  }
+  .store_link {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    img {
+      margin-right: 15px;
+      width: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app_wrapper {
+    background: url("../../assets/images/png/mobileBg.png");
+    height: unset;
+    background-size: cover;
+    .content_wrapper {
+      text-align: center;
+      .store_link {
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.download_wrapper {
+  background: $light;
+  .get_app_link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    img {
+      margin-right: 10px;
+      width: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .download_wrapper {
+    .get_app_link {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 150px;
+      }
+    }
+  }
+}

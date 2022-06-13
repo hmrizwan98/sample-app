@@ -1,0 +1,48 @@
+.footer_wrapper {
+  background-color: $light;
+  .footer_section {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .flexex_width {
+      min-width: 200px;
+      flex: 1;
+      padding-top: 20px;
+      h4 {
+        margin-bottom: 12px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style-type: none;
+          font-size: 14px;
+          color: $textColor;
+          margin-bottom: 8px;
+        }
+      }
+
+      .store_link {
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .copy_right {
+    border-top: 1px solid $borderColor;
+    padding: 20px 0px;
+    color: $textColor;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .txt_center {
+    text-align: center;
+  }
+  .copy_right {
+    text-align: center;
+  }
+}

@@ -1,0 +1,33 @@
+.grid_container_wrapper {
+  display: flex;
+  align-items: center;
+  .flex_cell {
+    width: 50%;
+    img {
+      width: 100%;
+      max-width: 275px;
+    }
+  }
+  .align_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid_container_wrapper {
+    flex-direction: column;
+    // padding: 0px 20px;
+    .flex_cell {
+      width: 100%;
+      margin: 0px 20px;
+    }
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}

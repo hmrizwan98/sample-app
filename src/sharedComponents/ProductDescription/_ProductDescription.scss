@@ -1,0 +1,36 @@
+.content_block {
+  padding: 25px;
+  position: relative;
+  &::after {
+    content: unset;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    border-top: 3px solid $light;
+    border-left: 3px solid $light;
+    background: $light;
+    transition: rota;
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    background: $light;
+  }
+  h4 {
+    margin-bottom: 16px;
+  }
+  p {
+    color: $textColor;
+  }
+}
+
+.content_block:hover::after {
+  content: "";
+}
+
+@media screen and (max-width: 991px) {
+  .content_block::after {
+    content: unset !important;
+  }
+}

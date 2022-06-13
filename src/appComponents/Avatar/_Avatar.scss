@@ -1,0 +1,28 @@
+.avatar_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 20px 0px;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.3);
+    color: $secondary;
+  }
+  img {
+    width: 120px;
+    height: 126px;
+  }
+  p {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar_wrapper {
+    // box-shadow: 0 1px 8px #d7d7d7;
+    margin: 0px 10px;
+    border-radius: 10px;
+  }
+}
